@@ -1,5 +1,5 @@
 import java.util.*;
-claass PointTest{
+class PointTest{
 	public static void main(String args[]){
 		Scanner in = new Scanner(System.in);
 		Point p1 = new Point(7.0,9.0);
