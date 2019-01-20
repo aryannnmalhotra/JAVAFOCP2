@@ -1,31 +1,31 @@
-import.java.util.*;
-class PointSort{
+import java.util.*;
+class Pointsort{
 	public static void main(String args[]){
-		Scanner in = new Scanner(System.in);
-		int i,j,num=0;
+		Scanner = new Scanner(System.in);
 		Point pArr[] = new Point[num];
-		System.out.println("Enter the number of objects that you want to enter the records for : ");
-		num = in.nexxtInt();
+		int i,j;
 		Point temp = new Point();
-		double  x,y;
-		for(i=0;i<pArr.length;i++){
-			System.out.println("Enter the values for Point 1 : ");
-			System.out.println("Enter the value for x : ");
-			x = in.nextDouble();
-			System.out.println("Enter the value for y : ");
-			y = in.nextDouble();
-			pArr[i] = new Point(x,y);
+		double x,y;
 
-		}
-		for(i=0;i<pArr.length;i++){
-			for(j=0;j<pArr.length;j++){
-				if(pArr[i].getY() > pArr[j].getY()){
-					temp = pArr[i];
-					pArr[i] = pArr[j];
-					pArr[j] = temp;
+		for(i=0; i<pArr.length;i++){
+			System.out.println("Enter the values for Point 1 : ");
+			System.out.println("Enter the values of x : ");
+			x = in.nextDouble();
+			System.out.println("Entter the values of y : ");
+			y = in.nextDouble(); 
+			pArr[i] = new Point(x,y);
+			for(i=0;i<pArr.length;i++){
+				for(j=0;j<pArr.length;j++){
+					 if(pArr[i] = pArr[j]);
+					 pArr[i] = pArr[j];
+					 pArr[j] = temp;
 				}
 			}
 		}
-
+		for(i=0;i,pArr.length;i++){
+	System.out.println(pArr[i].getX() + " " + pArr[i].getY())
 	}
+}
+
+
 }
