@@ -47,7 +47,7 @@ class Studentdriver{
 		String dob = in.nextline();
 
 		System.out.println("eMail :")
-		String eMail; = in.nextline();
+		String eMail = in.nextline();
 
 		System.out.println("ContactNo :")
 		String contactNo = in.nextline();
