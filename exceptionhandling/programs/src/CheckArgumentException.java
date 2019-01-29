@@ -7,16 +7,31 @@ class CheckArgException extends Exception{
 		}
 	}
 }
+boolean tryParseInt(String b){
+	try{
+		Integer.parseInt(b);
+		return true;
+	} catch(NumberFormatException e){
+		return false;
+	}
+}
 class Test{
 	public static void main(String args[]){
 		try{
 			if(args.length<5)
 				throw new CheckArgException("Num<5" + "\n");
-			int i,sum = 0;
+			int i,sum = 0,flag = 1;
+			if
 			for(i=0;i<args.length;i++){
-				sum=sum+Integer.parseInt(args[i]);
+				if(tryParseInt(args[i]))
+				   sum=sum+Integer.parseInt(args[i]);
+			    else{
+			    	flag = 0;
+			    	break;
+			    }
 			}
-			system.out.println("The sum of the command line arguments is" + "\n" + sum);
+			if(flag == 1)
+			    system.out.println("The sum of the command line arguments is" + "\n" + sum);
 			else
 				throw new CheckArgException("Arguments should be of integer type only" + "\n");
 
