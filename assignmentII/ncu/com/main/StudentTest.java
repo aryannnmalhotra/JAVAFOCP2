@@ -18,7 +18,7 @@ class Studentdriver{
 		String [] responsibilities;
 		String line1;
 		String line2;
-		String city:
+		String city;
 		String state;
 		int pincode;
 		String qualName;
@@ -45,12 +45,11 @@ class Studentdriver{
 
 		System.out.println("DOB :");
 		String dob = in.nextline();
-		validateJavaDate();
 
 		System.out.println("eMail :");
 		String eMail = in.nextline();
 
-		System.out.println("ContactNo :")
+		System.out.println("ContactNo :");
 		String contactNo = in.nextline();
 
 		System.out.println("Skills :");
@@ -68,11 +67,9 @@ class Studentdriver{
 
 		System.out.println("Start Date :");
 		String startDate = in.nextline();
-		validateJavaDate();
 
 		System.out.println("End Date :");
 		Date endDate = in.nextline();
-		validateJavaDate();
 
 		System.out.println("role :");
 		String role = in.nextline();
@@ -81,7 +78,8 @@ class Studentdriver{
 		String[] responsibilities = in.nextline();
 		nresp = in.nextInt();
 		responsibilities = new String[nresp];
-		for(a = 0;; a <nresp; a++){
+		for(a = 0; a < nresp; a++)
+		{
 			System.out.println("enter the responsibilities");
 			responsibilities[a] = in.nextline();
 		}	
@@ -121,9 +119,6 @@ class Studentdriver{
 
 		System.out.println("Pincode :");
 		int pincode = in.nextline();
-
-		validateFields();
-
 		Address addr = new Address(line1,line2,city,state,pincode);
 		student s1 = new Student(firstName,lastName,addr,dob,skills,nqual,nprog,eMail,contactNo);
 	}
